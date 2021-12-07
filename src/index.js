@@ -1,12 +1,13 @@
 import { StrictMode } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
+import { render } from "react-dom";
 
-import App from "./App";
+import EnTete from "./EnTete";
+import Atelier from "./Atelier";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  rootElement
-);
+ReactDOM.render(<EnTete />, rootElement);
+
+/*const exo = document.getElementById("body");
+ReactDOM.render(<Atelier />, exo);*/
