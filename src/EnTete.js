@@ -2,26 +2,21 @@ import React from "react";
 import { render } from "react-dom";
 import ReactDOM from "react-dom";
 
-import Atelier from "./Atelier";
-import Exo2 from "./test.js";
+import ExoVocab from "./AtelierExercices/ExoVocabulaires";
+import ExoGramm from "./AtelierExercices/ExoGrammaires";
 import "./Styles_EnTete.css";
 
 class EnTete extends React.Component {
   Site = "Nom du site";
 
-  CliqueMagazines() {}
-
-  CliqueAtelierExo() {
-    alert("Yo");
-  }
-  display1() {
+  displayVocab() {
     const exo = document.getElementById("body");
-    ReactDOM.render(<Atelier />, exo);
+    ReactDOM.render(<ExoVocab />, exo);
   }
 
-  display2() {
+  displayGramm() {
     const exo1 = document.getElementById("body");
-    ReactDOM.render(<Exo2 />, exo1);
+    ReactDOM.render(<ExoGramm />, exo1);
   }
 
   render() {
@@ -45,12 +40,12 @@ class EnTete extends React.Component {
               <a href="#">Atelier &ensp;</a>
               <ul class="sous">
                 <li>
-                  <a href="#" onClick={this.display1}>
+                  <a href="#" onClick={this.displayVocab}>
                     Vocabulaire
                   </a>
                 </li>
                 <li>
-                  <a href="#" onClick={this.display2}>
+                  <a href="#" onClick={this.displayGramm}>
                     Grammaire
                   </a>
                 </li>

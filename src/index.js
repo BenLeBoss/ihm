@@ -4,7 +4,6 @@ import ReactDOM from "react-dom";
 import { render } from "react-dom";
 
 import EnTete from "./EnTete";
-import Atelier from "./Atelier";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<EnTete />, rootElement);
