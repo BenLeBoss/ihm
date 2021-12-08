@@ -2,8 +2,8 @@ import React from "react"
 import ReactDOM from "react-dom"
 import "./Styles_Atelier.css"
 
-import Exo1 from "./exercices/VocExo1.js"
-import Exo2 from "./exercices/VocExo2.js"
+import Exo1 from "./exercices/GrammExo1.js"
+import Exo2 from "./exercices/GrammExo2.js"
 
 class ExoVocab extends React.Component {
 	state = {
